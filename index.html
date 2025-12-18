@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Project</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BBH+Hegarty&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="open-section">
+      <h1>Welcome To Zudio!!!</h1>
+      <a href="#shopping" class="shopping-btn">Lets Shop !!!</a>
+    </div>
+    <section class="shopping" id="shopping">
+      <h1>Enjoy Shopping With Us !!</h1>
+      <div class="products">
+        <div class="shopping-items">
+          <img
+            src="assets/blackTshirt.jpg"
+            alt=""
+            height="150px"
+            width="150px"
+          />
+          <h4>White T-Shirt</h4>
+          <p>&#8377;<span>599</span></p>
+          <button onclick="addToCart('White-T-Shirt',599)">Add To Cart</button>
+        </div>
+
+        <div class="shopping-items">
+          <img
+            src="assets/whiteTshirt.jpg"
+            alt=""
+            height="150px"
+            width="150px"
+          />
+          <h4>Black T-Shirt</h4>
+          <p>&#8377;<span>599</span></p>
+          <button onclick="addToCart('Black-T-Shirt',599)">Add To Cart</button>
+        </div>
+
+        <div class="shopping-items">
+          <img src="assets/hoodie.jpg" alt="" height="150px" width="150px" />
+          <h4>Black-Hoodie</h4>
+          <p>&#8377;<span>899</span></p>
+          <button onclick="addToCart('Black-Hoodie',899)">Add To Cart</button>
+        </div>
+
+        <div class="shopping-items">
+          <img src="assets/hoodie1.jpg" alt="" height="150px" width="150px" />
+          <h4>Hoodie</h4>
+          <p>&#8377;<span>599</span></p>
+          <button onclick="addToCart('Hoodie',599)">Add To Cart</button>
+        </div>
+
+        <div class="shopping-items">
+          <img src="assets/colors.jpg" alt="" height="150px" width="150px" />
+          <h4>Hoodie Colors</h4>
+          <p>&#8377;<span>999</span></p>
+          <button onclick="addToCart('Hoodie-Colors',999)">Add To Cart</button>
+        </div>
+
+        <div class="shopping-items">
+          <img src="assets/2.jpg" alt="" height="150px" width="150px" />
+          <h4>T-Shirt</h4>
+          <p>&#8377;<span>599</span></p>
+          <button onclick="addToCart('T-Shirt',599)">Add To Cart</button>
+        </div>
+
+        <div class="shopping-items">
+          <img src="assets/7.jpg" alt="" height="150px" width="150px" />
+          <h4>T-Shirt</h4>
+          <p>&#8377;<span>699</span></p>
+          <button onclick="addToCart('T-Shirt',699)">Add To Cart</button>
+        </div>
+
+        <div class="shopping-items">
+          <img src="assets/8.jpg" alt="" height="150px" width="150px" />
+          <h4>T-Shirt</h4>
+          <p>&#8377;<span>899</span></p>
+          <button onclick="addToCart('T-Shirt',899)">Add To Cart</button>
+        </div>
+
+        <div class="shopping-items">
+          <img src="assets/9.jpg" alt="" height="150px" width="150px" />
+          <h4>T-Shirt</h4>
+          <p>&#8377;<span>599</span></p>
+          <button onclick="addToCart('T-Shirt',599)">Add To Cart</button>
+        </div>
+
+        <div class="shopping-items">
+          <img src="assets/10.jpg" alt="" height="150px" width="150px" />
+          <h4>New Arrival</h4>
+          <p>&#8377;<span>599</span></p>
+          <button onclick="addToCart('New-Arrival',599)">Add To Cart</button>
+        </div>
+
+        <div class="shopping-items">
+          <img src="assets/11.jpg" alt="" height="150px" width="150px" />
+          <h4>Future T-Shirt</h4>
+          <p>&#8377;<span>699</span></p>
+          <button onclick="addToCart('Future-T-Shirt',699)">Add To Cart</button>
+        </div>
+
+        <div class="shopping-items">
+          <img src="assets/12.jpg" alt="" height="150px" width="150px" />
+          <h4>T-Shirt</h4>
+          <p>&#8377;<span>799</span></p>
+          <button onclick="addToCart('T-Shirt',799)">Add To Cart</button>
+        </div>
+      </div>
+        <section class="cart">
+        <div>
+      <h1>Your Cart</h1>
+      <p id="itemshower">No Items Added.</p>
+      </div>
+      <div>
+        <h1 id="total">Total</h1>
+        <button id="order">Place Order</button>
+      </div>
+    </section>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

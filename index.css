@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.open-section{
+    width: 100vmax;
+    height: 100vh;
+    position: fixed; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+}
+.open-section::before{
+    position: absolute;
+    content: "";
+    background-image: url(assets/centraldelhishoppinglead.jpg);
+    background-size: cover;
+    inset: 0;
+    z-index: -2;
+    opacity: 0.5;
+}
+.open-section>h1{
+    font-size: 60px;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  padding: 10%;
+  color:rgb(55, 56, 55);
+  transform: translateX(-100px);
+  animation: ltr 1s ease-in forwards;
+}
+.open-section>h1::after{
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 2px;
+    background-color: rgb(70, 75, 75);
+    left: 10%;
+    top: 58%;
+    transform: translateX(-100px);
+    animation: ltr 1s ease-in forwards;
+}
+@keyframes ltr {
+    from{
+        transform: translateX(-100px);
+    }to{
+        transform: translateX(0px);
+    }
+}
+@keyframes rtl {
+    from{
+        transform: translateX(100px);
+    }to{
+        transform: translateX(0px);
+    }
+}
+.shopping-btn{
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    background-color: black;
+    border-radius: 5px;
+    width: 90px;
+    margin: 10%;
+    position: relative;
+    transform: translateX(100px);
+    left: 70%;
+    animation: rtl 1s ease-in forwards;
+}
+.shopping{
+    gap: 20px;
+    top: 100vh;
+    position: relative;
+    z-index: 5;
+    background-color: rgb(218, 208, 208);
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 3%;
+    column-gap: 20px;
+}
+.shopping-items>img{
+    border-radius: 5px;
+    object-fit: cover;
+}
+.shopping-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 20px 10px;
+    border: 1px solid rgb(168, 165, 165);
+    border-radius: 5px;
+}
+.shopping-items span{
+    color: red;
+}
+.shopping-items h4{
+    font-size: 18px;
+}
+.shopping-items button{
+    cursor: pointer;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: black;
+    border: none;
+}
+.shopping-items button:hover{
+    background-color: antiquewhite;
+    color: black;
+    transition-duration: 0.5s;
+}
+.cart{
+    display: none;
+    position: relative;
+    bottom: 0px;
+    margin-top: 100px;
+    margin-bottom: -30px;
+    background-color: black;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.cart h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.cart button{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+.cart.active {
+  display: flex;
+  position: sticky;
+  bottom: 20px;
+  background: #000000;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}

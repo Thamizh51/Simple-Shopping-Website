@@ -1,0 +1,91 @@
+/* =========================
+   Tablets (≤ 1024px)
+========================= */
+@media (max-width: 1024px) {
+
+  .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .shopping {
+    padding: 8%;
+  }
+
+  .shopping-btn:link {
+    left: 60%;
+  }
+}
+
+/* =========================
+   Small tablets / large phones (≤ 768px)
+========================= */
+@media (max-width: 768px) {
+
+  .open-section {
+    width: 100vw;
+  }
+
+  .open-section > h1 {
+    font-size: 28px;
+    padding: 8%;
+  }
+
+  .open-section > h1::after {
+    width: 140px;
+    top: 60%;
+  }
+
+  .shopping-btn:link {
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 5%;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+  }
+
+  .shopping {
+    padding: 6%;
+  }
+}
+
+/* =========================
+   Mobile phones (≤ 480px)
+========================= */
+@media (max-width: 480px) {
+
+  .open-section {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .open-section > h1 {
+    font-size: 22px;
+    padding: 15% 5%;
+  }
+
+  .open-section > h1::after {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    top: 65%;
+  }
+
+  .shopping-btn:link {
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    padding: 10px 20px;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .shopping-items img {
+    width: 100%;
+    height: auto;
+  }
+}
